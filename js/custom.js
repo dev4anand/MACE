@@ -366,5 +366,16 @@ $(function () {
         interval: 5000
      });
 
+	 $(document).ready(function() {
+		$(".nav-link").click(function(e) {
+			e.preventDefault();
+			var targetId = $(this).attr("href").substring(1);
+			$("html, body").animate({
+				scrollTop: $("#" + targetId).offset().top
+			}, 800); // Adjust speed (800ms) as needed
+		});
+	});
+	
+	 
 
 });

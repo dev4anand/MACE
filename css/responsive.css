@@ -153,6 +153,7 @@
 }
 
 .banner_taital {
+    z-index:10000 ;
     font-size: 110px;
     padding-top: 10px;
 }
