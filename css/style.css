@@ -14,7 +14,7 @@
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
 @import url(nice-select.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -314,13 +314,15 @@ button {
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 0;
+    opacity: 0.85;
+    z-index: 1;
 }
 
 .banner_taital {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     font-size: 150px;
-    color: #000000;
+    color: #1c1b1b;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
