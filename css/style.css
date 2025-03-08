@@ -701,16 +701,32 @@ button.owl-next {
     width: 30%;
     float: left;
 }
-
+@media (min-width: 576px) { /* Applies to screens larger than 576px (non-mobile) */
+    .client_left {
+    padding: 20px;
+    }
+}
 .client_right {
     width: 70%;
     float: left;
     padding-top: 35px;
 }
+
 .client_left_2{
+    margin-left: 10px;
+    margin-right: 10px;
     width: 30%;
     float: left;
     text-align: right;
+}
+@media (min-width: 576px) { /* Applies to screens larger than 576px (non-mobile) */
+    .client_left_2 {
+        width: 30%;
+    float: left;
+    margin-left: 7px;
+    text-align: right;
+    padding: 20px;
+    }
 }
 .client_right_2 {
     width: 70%;
