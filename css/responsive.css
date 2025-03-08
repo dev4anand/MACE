@@ -222,6 +222,8 @@ button.owl-next {
 }
 .client_img {
     padding-top: 15px;
+    object-fit: cover; /* Prevent stretching */
+    /* display: block; */
 }
 
 .client_right_2 {
@@ -370,7 +372,7 @@ button.owl-next {
 }
 
 .banner_img {
-    width: 40%;
+    width: 100%;
 }
 
 .contact_bt {
