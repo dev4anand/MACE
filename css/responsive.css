@@ -394,7 +394,9 @@ button.owl-next {
 .service_section .owl-item.active.center .image_box {
     margin-bottom: 30px;
 }
-
+.owl-carousel {
+    touch-action: pan-y; /* Allows vertical scrolling */
+}
 .about_taital {
     font-size: 30px;
 }
