@@ -157,6 +157,11 @@
     font-size: 110px;
     padding-top: 10px;
 }
+.banner_taital2 {
+    z-index:10000 ;
+    font-size: 70px;
+    padding-top: 10px;
+}
 
 .image_box {
     padding: 24% 90px;
@@ -191,6 +196,9 @@ button.owl-next {
 
 .banner_taital {
     font-size: 90px;
+}
+.banner_taital2 {
+    font-size: 50px;
 }
 .banner_img {
     width: 65%;
@@ -263,6 +271,10 @@ button.owl-next {
 
 .banner_taital {
     font-size: 76px;
+    padding-top: 40px;
+}
+.banner_taital2 {
+    font-size: 39px;
     padding-top: 40px;
 }
 
@@ -381,7 +393,10 @@ button.owl-next {
     font-size: 50px;
     padding-top: 0;
 }
-
+.banner_taital2 {
+    font-size: 35px;
+    padding-top: 0;
+}
 .banner_img {
     width: 100%;
 }
