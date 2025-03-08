@@ -346,7 +346,14 @@ button.owl-next {
 
 
 } 
-
+@media (min-width: 1024px) {  /* Applies only to screens wider than 1024px (laptops & desktops) */
+    .banner_section {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding-bottom: 380px;
+    }
+}
 
 @media (max-width: 575px) {
 
@@ -364,7 +371,9 @@ button.owl-next {
 }
 
 .banner_section {
-    padding-top: 60px;
+    padding-top: 30px;
+    height: 380px;
+    /* padding-bottom: 380px; */
     /* padding-bottom: 50px; */
 }
 
