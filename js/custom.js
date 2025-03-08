@@ -379,3 +379,38 @@ $(function () {
 	 
 
 });
+let currentIndex = 0;
+
+function updateSlider(index) {
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${index * 100}%)`;
+
+    // Update active menu item
+    document.querySelectorAll('.menu-item').forEach(item => item.classList.remove('active'));
+    document.querySelector(`.menu-item[data-index="${index + 1}"]`).classList.add('active');
+}
+
+// Handle click on menu items
+document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', () => {
+        currentIndex = parseInt(item.getAttribute('data-index')) - 1;
+        updateSlider(currentIndex);
+    });
+});
+
+// Initialize Hammer.js for swipe functionality
+const slider = document.querySelector('.slider');
+const hammer = new Hammer(slider);
+
+hammer.on('swipeleft', () => {
+    currentIndex = (currentIndex + 1) % 3;
+    updateSlider(currentIndex);
+});
+
+hammer.on('swiperight', () => {
+    currentIndex = (currentIndex - 1 + 3) % 3;
+    updateSlider(currentIndex);
+});
+
+// Initialize first slide
+updateSlider(currentIndex);

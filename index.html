@@ -34,7 +34,8 @@
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
    <!-- header section start -->
    <!-- banner section start -->
    <div class="banner_section layout_padding">
-      <div class="container">
+      <div class="containertest">
          <img src="images/banner-img2.png" class="banner_img">
          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -90,7 +91,7 @@
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="row">
-                     <div class="col-sm-12" data-aos="fade-up">
+                     <div class="col-sm-12"data-aos="fade-up">
                         <h1 class="banner_taital">MACE FOODS</h1>
                         <div class="contact_bt"></div>
                      </div>
@@ -126,10 +127,10 @@
    </div>
    <!-- banner section end -->
    <!-- service section start -->
-   <div class="service_section layout_padding" style="position: relative;">
+   <div class="service_section layout_padding"style="position: relative;">
       <div class="container">
          <h1 class="service_taital">Our Products</h1>
-         <div class="service_section_2">
+         <!-- <div class="service_section_2">
             <div class="owl-carousel owl-theme">
                <div class="item">
                   <div class="image_box">
@@ -149,11 +150,42 @@
                   </div>
                   <h3 class="sound_text">Spicy <br>Mixture</h3>
                </div>
-
+               
             </div>
-         </div>
+         </div> -->
+         <div class="containertest">
+            <div class="slider">
+                <div class="square" data-index="1">
+                    <img src="images/appalam.png" alt="#" />
+                    <div class="content sound_text">Masala <br>Appalam</div>
+                </div>
+                <div class="square" data-index="2">
+                    <img src="images/bananachips.png" alt="#" />
+                    <div class="content sound_text">Banana <br>Chips</div>
+                </div>
+                <div class="square" data-index="3">
+                    <img src="images/mixture.png" alt="#" />
+                    <div class="content sound_text">Spicy <br>Mixture</div>
+                </div>
+            </div>
+        </div>
       </div>
+      <div class="menu">
+         <div class="menu-item active" data-index="1">
+             <i class="icon">1</i>
+         </div>
+         <div class="menu-item" data-index="2">
+             <i class="icon">2</i>
+         </div>
+         <div class="menu-item" data-index="3">
+             <i class="icon">3</i>
+         </div>
+     </div>
    </div>
+   
+  
+ 
+  
    <!-- service section end -->
    <!-- about section start -->
    <div class="about_section layout_padding about_content" id="about_content">
@@ -246,8 +278,8 @@
                <div class="carousel-item active">
                   <div class="client_section_2">
                      <div class="client_main d-flex align-items-center" data-aos="fade-left">
-                        <div class="client_left" style="margin-left: 7px;margin-right: 15px;">
-                           <div class="client_img"><img src="images/gautham.jpg" style=" border-radius: 100%;"></div>
+                        <div class="client_left"style="margin-left: 7px;margin-right: 15px;">
+                           <div class="client_img"><img src="images/gautham.jpg"style=" border-radius: 100%;"></div>
                         </div>
                         <div class="client_right">
                            <h3 class="name_text">Gautham <span style="float: right;"><img
@@ -258,8 +290,7 @@
                         </div>
                      </div>
 
-                     <div class="client_main_2 d-flex align-items-center" data-aos="fade-right"
-                        style=" margin-bottom: 35px;">
+                     <div class="client_main_2 d-flex align-items-center" data-aos="fade-right"style=" margin-bottom: 35px;">
                         <div class="client_right_2">
                            <h3 class="name_text">Anurudh <span style="float: left;"><img
                                     src="images/quick-icon.png"></span></h3>
@@ -268,15 +299,15 @@
                               Authenticity is what sets us apart."</p>
                         </div>
                         <div class="client_left_2">
-                           <div class="client_img"><img src="images/anujith.jpg" style=" border-radius: 100%;"></div>
+                           <div class="client_img"><img src="images/anujith.jpg"style=" border-radius: 100%;"></div>
                         </div>
                      </div>
 
 
                      <div></div>
                      <div class="client_main d-flex align-items-center" data-aos="fade-left">
-                        <div class="client_left" style="margin-left: 7px;margin-right: 15px;">
-                           <div class="client_img"><img src="images/sreejith.jpg" style=" border-radius: 100%;"></div>
+                        <div class="client_left"style="margin-left: 7px;margin-right: 15px;">
+                           <div class="client_img"><img src="images/sreejith.jpg"style=" border-radius: 100%;"></div>
                         </div>
                         <div class="client_right">
                            <h3 class="name_text">Sreejith <span style="float: right;"><img
@@ -296,7 +327,7 @@
                               and consistency."</p>
                         </div>
                         <div class="client_left_2">
-                           <div class="client_img"><img src="images/anand.jpg" style=" border-radius: 100%;"></div>
+                           <div class="client_img"><img src="images/anand.jpg"style=" border-radius: 100%;"></div>
                         </div>
                      </div>
 
@@ -363,10 +394,7 @@
       </div>
       <div class="map_main">
          <div class="map-responsive">
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d986.9327130866004!2d77.2651767911456!3d8.3295201097356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1741404331147!5m2!1sen!2sin"
-               width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d986.9327130866004!2d77.2651767911456!3d8.3295201097356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1741404331147!5m2!1sen!2sin" width="600" height="400" frameborder="0"  style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
       </div>
    </div>
@@ -374,8 +402,7 @@
    <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container">
-         <p class="copyright_text">Design & Developed by <a
-               href="https://www.instagram.com/a.n.a.n.d.._?igsh=NHJ3czJtbTV0bzB5">Anand Dev</a> </p>
+         <p class="copyright_text">Design & Developed by <a href="https://www.instagram.com/a.n.a.n.d.._?igsh=NHJ3czJtbTV0bzB5">Anand Dev</a> </p>
       </div>
    </div>
    <!-- copyright section end -->
@@ -416,33 +443,6 @@
       //       }
       //    }
       // })   
-      var owl = $(".owl-carousel");
-      var startY = 0;
-      var endY = 0;
-
-      owl.on("touchstart", function (event) {
-         startY = event.touches[0].clientY;
-      });
-
-      owl.on("touchmove", function (event) {
-         endY = event.touches[0].clientY;
-         if (Math.abs(startY - endY) > 10) {
-            event.stopPropagation(); // Allow vertical scrolling
-         }
-      });
-
-      owl.owlCarousel({
-         loop: true,
-         margin: 35,
-         nav: true,
-         responsive: {
-            0: { items: 1, margin: 0 },
-            575: { items: 1, margin: 0 },
-            768: { items: 3, margin: 0 },
-            1000: { items: 3 }
-         }
-      });
-
    </script>
 </body>
 
