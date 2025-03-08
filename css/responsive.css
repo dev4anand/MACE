@@ -258,6 +258,7 @@ button.owl-next {
 
 .banner_section {
     padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 .banner_taital {
@@ -364,10 +365,11 @@ button.owl-next {
 
 .banner_section {
     padding-top: 60px;
+    /* padding-bottom: 50px; */
 }
 
 .banner_taital {
-    font-size: 40px;
+    font-size: 60px;
     padding-top: 0;
 }
 
